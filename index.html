@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phone Hunter</title>
+
+    <!-- tailwind and daisyUI CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- custom CSS -->
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+
+<body>
+    <header class="container mx-auto">
+        <h1 class="text-3xl font-extrabold text-center p-5 text-green-500">Get your Best Phone</h1>
+    </header>
+
+    <main class="container mx-auto">
+
+        <!-- search bar -->
+        <section class="p-4 bg-white rounded-2xl flex justify-center space-x-2 ">
+            <input id="search-input" type="text" placeholder="Search..." class="input input-bordered w-full max-w-xs" />
+            <button onclick="search()" id="btn-search" class="btn btn-success">Search</button>
+        </section>
+
+        <!-- phones container -->
+        <div id="phones-container" class=" grid grid-cols-1 lg:grid-cols-3 gap-2 justify-items-center py-4">
+            
+        </div>
+    </main>
+
+    <footer>
+
+    </footer>
+
+
+    <!-- scripts -->
+    <script src="./scripts/script.js"></script>
+</body>
+
+</html>
